@@ -7,7 +7,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CMS首页</title>
+<title>☆CMS首页</title>
 <!-- 引入样式 -->
 <link href="/resource/css/bootstrap.css" rel="stylesheet">
 <link href="/resource/css/index.css" rel="stylesheet">
@@ -67,7 +67,7 @@ li {
 			<a href="#"><font color="#FFFFFF" size="3px">下载APP &nbsp;</font></a>
 			<div style="left: -8px">
 			   <c:if test="${null!=sessionScope.user}">
-			          <font style="color: white">登录人：${sessionScope.user.username },<a href="/passport/logout">註銷</a>
+			          <font style="color: white">登录人：${sessionScope.user.username },<a href="/passport/logout">注销</a>
 			      </font>
 			    </c:if>
 			   <c:if test="${null==sessionScope.user}">

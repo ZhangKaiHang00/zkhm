@@ -1,7 +1,7 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.bobo</groupId>
-  <artifactId>1708d-cms</artifactId>
+  <groupId>com.zhangkaihang</groupId>
+  <artifactId>zkh-cms</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>war</packaging>
   
@@ -36,13 +36,10 @@
 	<dependencies>
 		<!-- 依赖工具类 -->
 		<dependency>
-			<groupId>com.bobo.common</groupId>
-			<artifactId>bobo-utils</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
-
+			<groupId>com.zhangkaihang</groupId>
+			  <artifactId>zhangkaihang-utils</artifactId>
+			  <version>0.0.1-SNAPSHOT</version>
 		</dependency>
-
-
 		<!-- spring 及springMVC -->
 		<dependency>
 			<groupId>org.springframework</groupId>
@@ -262,7 +259,7 @@
 				<configuration>
 					<httpConnector>
 						<!-- 项目端口号 -->
-						<port>80</port>
+						<port>1111</port>
 						<!--项目路径 -->
 						<host>localhost</host>
 					</httpConnector>

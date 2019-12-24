@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>个人中心</title>
+<title>☆个人中心</title>
 <!-- 引入样式 -->
 <link href="/resource/css/bootstrap.css" rel="stylesheet">
 <script type="text/javascript" src="/resource/js/jquery-3.2.1.js"></script>
@@ -14,7 +14,7 @@
 		<!-- header -->
 		<div class="row" style="height: 80px; margin-top: 8px">
 			<div class="col-md-12" style="background-color: black">
-				<img alt="" src="/resource/images/logo.png" height="80px"
+				<img alt="" src="/resource/images/d60.jpg" height="80px"
 					class="rounded-circle"> <font color="#ffffff">个人中心 登录人:${sessionScope.user.username }
 					 <a href="/passport/logout">注销</a>
 					</font>
@@ -24,14 +24,14 @@
 
 		<div class="row" style="height: 550px">
 			<!-- 菜单 -->
-			<div class="col-md-3" style="background-color: #ccc" >
+			<div class="col-md-3" style="background-color: lime" >
 				<div class="list-group" style="margin-top: 20px">
 					<a id="aaa" href="#" data="/my/article/articles" class="list-group-item list-group-item-action active">
 						我的文章 </a> <a href="#" data="/my/article/publish"
 						class="list-group-item list-group-item-action">发布文章</a> <a
 						href="#" class="list-group-item list-group-item-action">我的收藏</a>
 						<a
-						href="#" class="list-group-item list-group-item-action" data="/my/article/comments">我的評論</a>
+						href="#" class="list-group-item list-group-item-action" data="/my/article/comments">我的评论</a>
 						 <a
 						href="#" class="list-group-item list-group-item-action">用户设置</a> <a
 						href="#" class="list-group-item list-group-item-action disabled"

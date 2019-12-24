@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>CMS后台管理系统</title>
+<title>☆CMS后台管理系统</title>
 <!-- 引入样式 -->
 <link href="/resource/css/bootstrap.css" rel="stylesheet">
 <script type="text/javascript" src="/resource/js/jquery-3.2.1.js"></script>
@@ -13,10 +13,10 @@
 	<div class="container">
 		<!-- header -->
 		<div class="row" style="height: 80px; margin-top: 8px">
-			<div class="col-md-12" style="background-color: #0073B7">
-				<img alt="" src="/resource/images/logo.png" height="80px"
-					class="rounded-circle"><font color="white">CMS后台管理</font>
-					<span><font color="white"> 登录人:${sessionScope.admin.username }</font>
+			<div class="col-md-12" style="background-color: red">
+				<img alt="" src="/resource/images/d194.jpg" height="80px"
+					class="rounded-circle"><font color="white">CMS后台管理：</font>
+					<span><font color="black"> 登录人:${sessionScope.admin.username }</font>
 					 <a href="/passport/logout">注销</a>
 					</span>
 			</div>
@@ -25,7 +25,7 @@
 
 		<div class="row" style="height: 550px">
 			<!-- 菜单 -->
-			<div class="col-md-3" style="background-color: #ccc">
+			<div class="col-md-3" style="background-color: gray">
 			
 			  <div style="margin-top: 30px">
 				<nav class="navbar navbar-light bg-light">

@@ -53,7 +53,7 @@
 
 			</div>
 			<div class="col-md-8">
-				<img alt="" src="/resource/images/reg-bg.jpg"
+				<img alt="" src="/resource/images/d192.jpg"
 					style="width: 450px; height: 350px" class="rounded-circle">
 			</div>
 		</div>
