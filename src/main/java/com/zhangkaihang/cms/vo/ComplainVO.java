@@ -9,7 +9,7 @@ public class ComplainVO extends Complain{
 	private String startTime;//举报时间开始
 	private String endTime;//举报时间结束
 	
-	private String orderName;//排序名稱
+	private String orderName;//排序名称
 	private String orderMethod;//排序方法、、 asc,desc
 	
 	

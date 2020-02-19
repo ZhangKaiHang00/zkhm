@@ -50,4 +50,9 @@ public class ComplainServiceImpl implements ComplainService {
 		return new PageInfo<Complain>(list);
 	}
 
+	@Override
+	public Complain select(Integer id) {
+		return complainMapper.select(id);
+	}
+
 }

@@ -63,4 +63,9 @@
          
          </if>
 	</select>
+	
+	<select id="select" resultType="Complain">
+		select * from cms_complain where id=#{id}
+	</select>
+	
 </mapper>

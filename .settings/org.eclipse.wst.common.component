@@ -4,6 +4,9 @@
         <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <dependent-module archiveName="zhangkaihang-utils-0.0.1-SNAPSHOT.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/zhangkaihang-utils/zhangkaihang-utils">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
         <property name="context-root" value="zkh-cms"/>
         <property name="java-output-path" value="/zkh-cms/target/classes"/>
     </wb-module>

@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>举报</title>
+<title>投诉</title>
 <!-- 引入样式 -->
 <link href="/resource/css/bootstrap.css" rel="stylesheet">
 <script type="text/javascript" src="/resource/js/jquery-3.2.1.js"></script>
@@ -42,7 +42,7 @@ function add(){
 </head>
 <body>
 	<div align="center" class="container" style="width: 600px">
-		<h1>举报信息</h1>
+		<h1>投诉内容</h1>
 		<hr>
 		
 		<form  id="form2">
@@ -51,21 +51,19 @@ function add(){
 		 <!-- 用户 -->
 		 <input type="hidden" name="user_id" value="${article.user.id }">
 			<div class="form-group form-inline">
-				举报类型:<select name="typename" class="form-control">
-					<option>垃圾广告</option>
-					<option>政治反动</option>
-					<option>钓鱼网站</option>
-				</select>
+				<input class="form-control" type="radio" name="typename" value="涉及黄色">涉及黄色&nbsp;
+				<input class="form-control" type="radio" name="typename" value="涉及暴力">涉及暴力&nbsp;
+				<input class="form-control" type="radio" name="typename" value="涉及违宗教政策">涉及违规宗教政策&nbsp;
+				<input class="form-control" type="radio" name="typename" value="涉及国家安全">涉及国家安全&nbsp;
+				<input class="form-control" type="radio" name="typename" value="抄袭内容">抄袭内容&nbsp;
+				<input class="form-control" type="radio" name="typename" value="其他">其他
 			</div>
 			<div class="form-group form-inline">
-				举报地址：<input type="text" name="url" class="form-control">
+				证据url地址：<input type="text" name="url" class="form-control">
 			</div>
 			<div class="form-group form-inline">
 				举报内容：
-				<textarea rows="10" cols="100" name="content" class="form-control"></textarea>
-			</div>
-			<div class="form-group form-inline">
-				附近：<input type="file" name="file" class="form-control">
+				<textarea rows="1" cols="20" name="content" class="form-control"></textarea>
 			</div>
 			<div class="form-group form-inline">
 				<button type="button" onclick="add()">举报</button>

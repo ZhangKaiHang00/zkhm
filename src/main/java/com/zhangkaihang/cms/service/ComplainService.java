@@ -7,9 +7,12 @@ import com.zhangkaihang.cms.domain.Complain;
 import com.zhangkaihang.cms.vo.ComplainVO;
 
 public interface ComplainService {
-	//举报
+	//投诉
 	boolean insert(Complain complain);
 	
-	//查询举报
-		PageInfo<Complain> selects(ComplainVO complainVO,Integer page,Integer pageSize);
+	//查询投诉
+	PageInfo<Complain> selects(ComplainVO complainVO,Integer page,Integer pageSize);
+	
+	Complain select(Integer id);
+	
 }

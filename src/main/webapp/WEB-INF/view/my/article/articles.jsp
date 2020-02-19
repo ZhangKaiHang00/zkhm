@@ -21,36 +21,29 @@
 			<ul class="list-unstyled">
 			 <c:forEach items="${info.list }" var="a">
 				<li class="media"><img src="/pic/${a.picture }" class="mr-3" alt="..." style="width: 150px" height="120px">
-					<div class="media-body">
-						<h5 class="mt-0 mb-1"><a href="/my/article/article?id=${a.id }" target="_blank" >${a.title }</a></h5>
-						<div style="margin-top: 50px">
-						<fmt:formatDate value="${a.created}" pattern="yyyy-MM-dd HH:mm:ss"/> 
-						<span style="float: right">
-						<c:if test="${a.deleted==0}">
+		<div class="media-body">
+				<h5 class="mt-0 mb-1"><a href="/my/article/article?id=${a.id }" target="_blank" >${a.title }</a></h5>
+				<div style="margin-top: 50px">
+					<fmt:formatDate value="${a.created}" pattern="yyyy-MM-dd HH:mm:ss"/> 
+					<span style="float: right">
+					<c:if test="${a.deleted==0}">
 						 <button type="button" onclick="update(${a.id},this)" class="btn-sm btn-danger" style="width: 62px">删除</button></span> 
-						</c:if>
-					    <c:if test="${a.deleted==1}">
+					</c:if>
+					<c:if test="${a.deleted==1}">
 						 <button type="button" onclick="update(${a.id},this)" class="btn-sm btn-warning">已删除</button></span> 
-						</c:if>
+					</c:if>
 						
-						</div>
-					</div>
+				</div>
+		</div>
 					</li>
 					<hr/>
 					
-					</c:forEach>
+			</c:forEach>
 				
-			</ul>
-
-
-
-		</div>
-
-
-
+		</ul>
+	</div>
 
 		<jsp:include page="/WEB-INF/view/common/pages.jsp" />
-
 
 	</div>
 </body>

@@ -146,9 +146,6 @@ public class AdminController {
 			@RequestParam(defaultValue = "1") Integer page,
 			@RequestParam(defaultValue = "3") Integer pageSize) {
 		
-		
-		
-		
 		PageInfo<Complain> info = complainService.selects(complainVO, page, pageSize);
 		model.addAttribute("info", info);
 		model.addAttribute("complainVO", complainVO);
@@ -156,4 +153,11 @@ public class AdminController {
 		return "admin/article/complains";
 	}
 
+	@RequestMapping("article/select1")
+	public String select1(Model model,Integer id) {
+		Complain complain = complainService.select(id);
+		model.addAttribute("complain", complain);
+		return "admin/article/select1";
+	}
+	
 }

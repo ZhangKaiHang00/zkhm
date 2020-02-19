@@ -43,7 +43,7 @@ $(function(){
 			prettyPrint();
 		});
 });
-	</script>
+</script>
 </head>
 <body>
 	<form id="form1">
@@ -104,17 +104,10 @@ function publish(){
 		}
 		
 		
-		
-		
 	})
 	
 	
-	
-	
-	
 }
-
-
 
 
 

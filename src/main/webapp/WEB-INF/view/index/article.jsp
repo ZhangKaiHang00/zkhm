@@ -19,9 +19,10 @@
 <body>
 	<div class="container">
 		<h1 align="center">${article.title }</h1>
-		<span style="float: right"><a href="/complain?id=${article.id }">举报</a></span>
+		<span style="float: right"><a href="/complain?id=${article.id }">投诉</a></span>
+		<span style="float: left"><a href="/shou?id=${article.id }">收藏</a></span>
 
-		<h3>${a.user.username}
+		<br><h3>${a.user.username}
 			<fmt:formatDate value="${article.created }"
 				pattern="yyyy-MM-dd HH:mm:ss" />
 		</h3>

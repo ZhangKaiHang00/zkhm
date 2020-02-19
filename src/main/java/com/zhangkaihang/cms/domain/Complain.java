@@ -1,10 +1,10 @@
 package com.zhangkaihang.cms.domain;
 /**
- * 举报文章
+ * 投诉文章
  * @ClassName: Complain 
  * @Description: TODO
  * @author: zkh
- * @date: 2019年12月20日 下午4:01:43
+ * @date: 2019年12月25日
  */
 public class Complain {
 	
@@ -17,11 +17,8 @@ public class Complain {
 	
 	private String url;//举报的文章地址
 	
-	
-	private  Integer user_id;//举报人人ID
-	
+	private  Integer user_id;//举报人ID
 	private  String created;//举报时间
-	
 	private String complain_num;//举报次数
 	
 	private Article article;

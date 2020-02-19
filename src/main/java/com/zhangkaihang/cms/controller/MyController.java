@@ -22,13 +22,17 @@ import org.springframework.web.multipart.MultipartFile;
 import com.github.pagehelper.PageInfo;
 import com.zhangkaihang.cms.domain.Article;
 import com.zhangkaihang.cms.domain.ArticleWithBLOBs;
+import com.zhangkaihang.cms.domain.ArticlesShou;
 import com.zhangkaihang.cms.domain.Category;
 import com.zhangkaihang.cms.domain.Channel;
 import com.zhangkaihang.cms.domain.Comment;
+import com.zhangkaihang.cms.domain.Complain;
 import com.zhangkaihang.cms.domain.User;
 import com.zhangkaihang.cms.service.ArticleService;
 import com.zhangkaihang.cms.service.ChannelService;
 import com.zhangkaihang.cms.service.CommentService;
+import com.zhangkaihang.cms.service.ShouService;
+import com.zhangkaihang.cms.vo.ComplainVO;
 
 /**
  * 
@@ -50,6 +54,10 @@ public class MyController {
 	
 	@Resource
 	private CommentService commentService;
+	
+	@Resource
+	private ShouService shouService;
+	
 	//个人中心首页
 	@RequestMapping(value = {"","/","index"})
 	public String index() {
@@ -207,6 +215,15 @@ public class MyController {
 		article.setHot(0);//非热文章
 		return articleService.insertSelective(article)>0;
 		
+	}
+	
+	
+	//查询投诉
+	@GetMapping("article/shous")
+	public String complain(Model model) {
+			List<ArticlesShou> list = shouService.selects();
+			model.addAttribute("list", list);
+			return "my/article/shous";
 	}
 	
 }

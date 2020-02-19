@@ -1,10 +1,8 @@
-package com.zhangkaihang.cms.domain;
+package com.zhangkaihang.cms.util;
 
 import java.io.Serializable;
 
-import org.springframework.data.elasticsearch.annotations.Document;
-import org.springframework.data.elasticsearch.annotations.Field;
-import org.springframework.data.elasticsearch.annotations.FieldType;
+import com.zhangkaihang.cms.domain.Article;
 /**
  * 
  * @ClassName: ArticleWithBLOBs 
@@ -12,7 +10,6 @@ import org.springframework.data.elasticsearch.annotations.FieldType;
  * @author: zkh
  * @date: 2019年12月10日 下午3:08:35
  */
-@Document(indexName = "cms_articles",type = "article")
 public class ArticleWithBLOBs extends Article implements Serializable {
     /**
 	 * @fieldName: serialVersionUID
@@ -20,7 +17,7 @@ public class ArticleWithBLOBs extends Article implements Serializable {
 	 * @Description: TODO
 	 */
 	private static final long serialVersionUID = 3784014497633443444L;
-	@Field(analyzer="ik_smart",index=true,store=true,searchAnalyzer="ik_smart",type=FieldType.text)
+
 	private String content;//文章内容
 
     private String summary;//文章摘要
